@@ -7,6 +7,11 @@ export default defineNuxtConfig({
     // Add cors headers on API routes
     "/api/**": { cors: true },
   },
+  runtimeConfig: {
+    public: {
+      baseURL: "",
+    },
+  },
   vuetify: {
     moduleOptions: {
       /* module specific options */
