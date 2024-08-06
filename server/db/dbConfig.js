@@ -8,8 +8,7 @@ const __dirname = dirname(__filename);
 
 console.log("file name, dirname", __filename, __dirname);
 
-const dbPath = new URL(`../../server/mukilam.db`, `file://${__dirname}/`)
-  .pathname;
+const dbPath = new URL(`./mukilam.db`, `file://${__dirname}/`).pathname;
 
 console.log("DB patth", dbPath);
 
